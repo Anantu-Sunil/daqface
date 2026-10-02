@@ -276,8 +276,8 @@ class DoTriggeredCoTask:
         DAQmxStartTask(self.do_handle)
         DAQmxStartTask(self.co_handle)
   
-        DAQmxWaitUntilTaskDone(self.co_handle, 100)
-        DAQmxWaitUntilTaskDone(self.do_handle, 100)
+        DAQmxWaitUntilTaskDone(self.co_handle, 150)
+        DAQmxWaitUntilTaskDone(self.do_handle, 150)
 
         self.ClearTasks()
 
@@ -323,8 +323,8 @@ class DoCoTask:
 
         DAQmxStartTask(self.do_handle)
         DAQmxStartTask(self.co_handle)
-        DAQmxWaitUntilTaskDone(self.co_handle, 100)
-        DAQmxWaitUntilTaskDone(self.do_handle, 100)
+        DAQmxWaitUntilTaskDone(self.co_handle, 150)
+        DAQmxWaitUntilTaskDone(self.do_handle, 150)
         self.ClearTasks()
 
     def ClearTasks(self):
